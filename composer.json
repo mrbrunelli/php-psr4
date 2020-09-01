@@ -1,0 +1,26 @@
+{
+    "name": "alfa/psr4",
+    "authors": [
+        {
+            "name": "Matheus R. Brunelli",
+            "email": "matheus.brunelli@gmail.com"
+        }
+    ],
+    "description": "Aula PSR-4",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Alfa\\": "src/"
+        }
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^5.1"
+    },
+    "scripts": {
+        "cli": "cd public && php index.php",
+        "server": "php -S localhost:8080 -t public/"
+    },
+    "config": {
+        "process-timeout": 0
+    }
+}
