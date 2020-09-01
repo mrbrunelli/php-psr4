@@ -1,0 +1,13 @@
+version: "3.1"
+
+services:
+    php:
+        build:
+            context: ./docker/php # Indica onde está o arquivo Dockerfile
+            dockerfile: Dockerfile
+        container_name: alfa-php # Apelido para o container
+        volumes:
+            - ./:/var/www/html/ # Irá copiar o conteúdo da pasta src para o container
+        ports: # Mapear as portas para ficarem visiveis na máquina host
+            - "80:80"
+            - "443:443"
